@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo">MyTravel</label>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OUR PRODUCT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <h1 style="text-align: center;padding-top: 70px;font-size: 55px;"> Your Trusted Travel Agent</h1>
+        <h4 style="text-align: center;padding-bottom: 100px;font-size: 28px;color: gray;">Your happiness is our happiness</h4>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="imgslide">
+                <img src="assets/img1.jpeg" alt="" class="imgview">
+                <img src="assets/img2.jpeg" alt="" class="imgview">
+                <img src="assets/img3.jpeg" alt="" class="imgview">
+                <img src="assets/img4.jpeg" alt="" class="imgview">
+                <img src="assets/img5.jpeg" alt="" class="imgview">
+            </div>
+            
+            <div class="AutoSlider"></div>
+            <figcaption></figcaption>
+            <div class="ContactForm">
+                <div style="margin-bottom: 60px;">
+                    <strong style="font-size: 30px;">Contact Us</strong><br><br>
+                    <span>Sales akan mendhubungi anda 1x24 jam setelah data kami terima</span>
+                </div>
+                
+                <form action="">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="First and Last name"><br><br>
+                    
+                    <label for="email">Email Address:</label><br>
+                    <input type="text" id="email" name="email" placeholder="example@email.com"><br><br>
+                    
+                    <label for="destination">Where are you interested in?:</label><br>
+                    <select id="destination" name="destination" required>
+                        <option value="" disabled selected hidden>Select option</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Singapore">Singapore</option>
+                    </select><br><br>                    
+                    <input type="submit" value="SEND"><br>
+                  </form> 
+            </div>
+        </section>
+        
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
