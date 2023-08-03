@@ -10,20 +10,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <label class="logo">MyTravel</label>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">OUR PRODUCT</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
-        </nav>
-        <h1 style="text-align: center;padding-top: 70px;font-size: 55px;"> Your Trusted Travel Agent</h1>
-        <h4 style="text-align: center;padding-bottom: 100px;font-size: 28px;color: gray;">Your happiness is our happiness</h4>
+        <div class="navcontainer">
+            <nav>
+                <label class="logo">MyTravel</label>
+                <ul>
+                    <li class="HOME"><a href="#home">HOME</a></li>
+                    <li><a href="#our-package">OUR PRODUCT</a></li>
+                    <li class="CONTACT"><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 style="text-align: center;padding-top: 120px;font-size: 3rem;"> Your Trusted Travel Agent</h1>
+        <h4 style="text-align: center;padding-bottom: 100px;font-size: 1.5rem;color: gray;">Your happiness is our happiness</h4>
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="imgslide">
                 <img src="assets/img1.jpeg" alt="" class="imgview">
                 <img src="assets/img2.jpeg" alt="" class="imgview">
@@ -34,13 +36,13 @@
             
             <div class="AutoSlider"></div>
             <figcaption></figcaption>
-            <div class="ContactForm">
+            <div class="ContactForm" >
                 <div style="margin-bottom: 60px;">
                     <strong style="font-size: 30px;">Contact Us</strong><br><br>
                     <span>Sales akan mendhubungi anda 1x24 jam setelah data kami terima</span>
                 </div>
                 
-                <form action="">
+                <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >
                     <label for="name">Your Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="First and Last name"><br><br>
                     
@@ -60,8 +62,58 @@
                   </form> 
             </div>
         </section>
+
+        <section class="our-package" id="our-package">
+            <div class="separator">
+                <span>OUR PACKAGE</span>
+            </div>
+            <div class="package">
+                <div class="pack">
+                    <span><b>Bali</b></span>
+                    <p>Travel dan wisata disini 
+                        buat hati adem dan hilangkan jenuhmu</p>
+                </div>
+                <div class="pack">
+                    <span><b>Bali</b></span>
+                    <p>Travel dan wisata disini 
+                        buat hati adem dan hilangkan jenuhmu</p>
+                </div>
+                <div class="pack">
+                    <span><b>Bali</b></span>
+                    <p>Travel dan wisata disini 
+                        buat hati adem dan hilangkan jenuhmu</p>
+                </div>
+                <div class="pack">
+                    <span><b>Bali</b></span>
+                    <p>Travel dan wisata disini 
+                        buat hati adem dan hilangkan jenuhmu</p>
+                </div>
+                <div class="pack">
+                    <span><b>Bali</b></span>
+                    <p>Travel dan wisata disini 
+                        buat hati adem dan hilangkan jenuhmu</p>
+                </div>
+                <div class="pack">
+                    <span><b>Bali</b></span>
+                    <p>Travel dan wisata disini 
+                        buat hati adem dan hilangkan jenuhmu</p>
+                </div>
+            </div>
+
+        </section>
         
     </main>
+
+    <footer id="contact">
+        
+        <div class="footer-container">            
+            <strong style="font-size: 30px;">Your Closing Argument Headline</strong><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae est blanditiis autem animi? Accusantium officia cumque sapiente? Odit voluptatibus minus maiores at facilis doloribus exercitationem animi nisi est, ad aspernatur.</p>
+            <input style="width: 30%;margin: 20px" type="submit" value="CALL US">
+            <p>term of service</p>
+        </div>
+      
+    </footer>
 
 
     <script src="js/script.js"></script>

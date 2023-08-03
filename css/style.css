@@ -10,7 +10,15 @@ body{
     background-color: #e4f6ff;
 }
 
+.navcontainer{
+    height: 80px;
+    background-color:#006cca;
+    position: fixed;
+    width: 100%;
+}
+
 nav{
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -27,49 +35,51 @@ label.logo{
 }
 
 nav ul{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     margin-right: 20px;  
-    
+    border: 1px solid white;
+    border-radius: 10px;
         
 }
 
 nav ul li{
     align-items: center;
-    line-height: 60px;
-    background-color:#006cca;
-    
+    line-height: 40px;   
+    padding: 0 10px;
 }
 
 nav ul li a {    
     color: white;
     text-align: center;
-    padding: 15px 16px;
-    margin-bottom: 1px;
+    
 }
+
+.HOME{border-right: 1px solid white;}
+.CONTACT{border-left: 1PX solid white;}
 
 nav ul li a:hover{ background-color: #002bba;}
 
 .home{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .imgview{
-    width: 700px;
-    height: 700px;
+    width: 50vw;
+    height: 50vw;
     object-fit: cover;
     display: none;
-    
+    border-radius: 2%;
 }
 
 .ContactForm{
     font-size: 20px;
     box-sizing: border-box;
-    border-radius: 10px;
-    margin-right: 10px;
-    width: 500px;
+    border-radius: 10px;    
+    width: 35vw;
     background-color: #cadee8;
     padding: 60px;
        
@@ -95,10 +105,75 @@ select:invalid{
     color: gray;
 }
 
+.separator{
+    margin: 40px 0;
+    height: 150px;
+    background-color: #006cca;
+    color: white;
+    font-size: 30px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.package{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pack{
+    padding: 2%;   
+    width: 30vw;
+    height: 20vh;
+    margin: 15px;
+    border: 2px solid rgb(0, 124, 201);
+    border-radius: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer {
+    margin: 15px 0;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    border-top: 2px solid black;
+    margin-top: 30px;
+}
+
+.footer-container{         
+    width: 70vw;
+    height: 30vh;    
+    text-align: center;
+    margin: 50px 0; 
+    
+}
+
+@media screen and (max-width: 1275px){
+    .home{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;}
+    
+    .imgview {
+        margin-bottom: 40px;
+        width: 70vw;
+        height: 70vw;
+        object-fit: cover;
+        display: none;        
+    }
+
+    .ContactForm{
+        width: 70vw;
+    }
+}
+
 @media screen and (max-width: 680px) {
     nav ul{font-size: 13px;}
     nav ul li a { padding: 7px 8px;}
     label.logo{font-size: 23px;padding: 0 30px;}
+  
 }
 
 @media screen and (max-width: 480px) {
